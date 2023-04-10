@@ -12,7 +12,7 @@ import {MySequence} from './sequence';
 import {AuditExportServiceBindings, AuditServiceComponent} from '@sourceloop/audit-service';
 import {AuthenticationServiceComponent} from '@sourceloop/authentication-service';
 import {SaveExportAuditLogsProvider} from './providers/exportLogs.provider';
-import {ExportColumnExtension1, ExportColumnExtension2, ExportColumnExtension3, ExportColumnExtension4} from './ExportColumnExtensions';
+import {ExportColumnExtension1, ExportColumnExtension2, ExportColumnExtension3, ExportColumnExtension4, ExportColumnExtension5} from './ExportColumnExtensions';
 
 export {ApplicationConfig};
 
@@ -36,12 +36,13 @@ export class TestExportApplication extends BootMixin(
     this.component(AuditServiceComponent);
     this.component(AuthenticationServiceComponent)
 
-    this.bind(AuditExportServiceBindings.SAVE_EXPORT_LOGS.key).toProvider(SaveExportAuditLogsProvider)
+    // this.bind(AuditExportServiceBindings.SAVE_EXPORT_LOGS.key).toProvider(SaveExportAuditLogsProvider)
 
     this.add(createBindingFromClass(ExportColumnExtension1))
     this.add(createBindingFromClass(ExportColumnExtension2))
     this.add(createBindingFromClass(ExportColumnExtension3))
     this.add(createBindingFromClass(ExportColumnExtension4))
+    this.add(createBindingFromClass(ExportColumnExtension5))
 
 
 

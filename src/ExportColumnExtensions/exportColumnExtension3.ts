@@ -11,6 +11,5 @@ export class ExportColumnExtension3 implements IColumnHandler {
   columnValueBuilder(auditLog: AuditLog): string {
     const columnValue = auditLog.id;
     return JSON.stringify(columnValue);
-
   }
 }

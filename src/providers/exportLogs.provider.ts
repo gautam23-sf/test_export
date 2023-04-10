@@ -1,8 +1,4 @@
 import {Provider, ValueOrPromise} from '@loopback/core';
-import {AuditExportServiceBindings} from '@sourceloop/audit-service';
-import * as fs from 'fs';
-import * as path from 'path';
-
 
 export interface IExportLogsDestinationFn {
   saveLogs(destination: string): Promise<string>;

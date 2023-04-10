@@ -55,7 +55,7 @@
     "@loopback/rest": "^12.0.7",
     "@loopback/rest-explorer": "^5.0.7",
     "@loopback/service-proxy": "^5.0.7",
-    "@sourceloop/audit-service": "file:../export_latest/loopback4-microservice-catalog/services/audit-service/sourceloop-audit-service-5.2.16.tgz",
+    "@sourceloop/audit-service": "file:sourceloop-audit-service-5.2.16.tgz",
     "@sourceloop/authentication-service": "^9.0.6",
     "i": "^0.3.7",
     "kv-redis": "^0.1.3",
